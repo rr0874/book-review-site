@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Book Review Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <div class="container">
+    <aside class="sidebar">
+      <div class="sidebar-content">
+        <h2>Genres</h2>
+        <ul>
+          <li onclick="openGenre('fiction')">📖 Fiction</li>
+          <li onclick="openGenre('scifi')">👽 Sci-Fi</li>
+          <li onclick="openGenre('spiritual')">🧘 Spiritual</li>
+          <li onclick="openGenre('autobiography')">📝 Autobiography</li>
+          <li onclick="openGenre('adventure')">🗺️ Adventure</li>
+        </ul>
+      </div>
+    </aside>
+    
+    <main class="main-content">
+      <h1 class="heading">Welcome to the Book Galaxy 🌠</h1>
+      <div class="book-scene">
+        <img src="images/book.jpg" class="animated-img book-img" alt="Open Book Animation" />
+      </div>
+    </main>
+  </div>
+
+ <script>
+    function openGenre(genre) {
+      window.location.href = `${genre}.html?genre=${genre}`;
+    }
+  </script>
+  
+</body>
+</html>
+
+   
+      
